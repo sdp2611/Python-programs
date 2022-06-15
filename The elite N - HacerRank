@@ -1,0 +1,14 @@
+k=int(input())
+n=int(input())
+a=input().split()
+day=1
+b=k
+for i in range(n):
+    if(k<=int(a[i])):
+        day+=1
+        k=b
+        if(k<=int(a[i])):
+            day=-1
+            break
+    k=k-int(a[i])
+print(day)
